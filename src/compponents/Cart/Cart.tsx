@@ -22,7 +22,7 @@ let Cart:React.FC<IProps> = () => {
     const handleRemoveFromCart = (cartItem:any) => {
         dispatch(removeFromCart(cartItem));
     };
-
+//
     return(
         <React.Fragment>
             <>
