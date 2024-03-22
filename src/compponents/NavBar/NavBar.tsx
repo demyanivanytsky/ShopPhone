@@ -5,7 +5,6 @@ import {useSelector} from "react-redux";
 import {RootState} from "../Cart/cartSlice";
 import {selectTotalItems} from "../../selectors/selectors";
 
-// interface IState{}
 interface IProps{}
 let NavBar:React.FC<IProps> = () => {
 

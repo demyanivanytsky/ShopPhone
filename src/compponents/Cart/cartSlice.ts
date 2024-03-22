@@ -7,6 +7,7 @@ interface CartItem {
     cartQuantity: number;
     title:string;
     img:string;
+    price:number;
 }
 
 interface CartState {
@@ -40,12 +41,32 @@ const cartSlice = createSlice({
            state.cartItems = state.cartItems.filter(item =>
             item.id !== action.payload.id)
 
-            localStorage.setItem("Phones", JSON.stringify(state.cartItems))
+            localStorage.setItem("Phones", JSON.stringify(state.cartItems));
             toast.error(`Removed ${action.payload.title} from cart!`, {position:"bottom-left"});
        },
+       decreaseCart(state, action:PayloadAction<CartItem>) {
+           const itemIndex = state.cartItems.findIndex(
+               cartItem => cartItem.id === action.payload.id
+           )
+           if (state.cartItems[itemIndex].cartQuantity > 1) {
+                state.cartItems[itemIndex].cartQuantity -=1;
+               toast.info(`Decreased ${action.payload.title}cart quantity!`, {position:"bottom-left"});
+           } else if (state.cartItems[itemIndex].cartQuantity === 1){
+               state.cartItems = state.cartItems.filter(item => item.id !== action.payload.id);
+               toast.error(`Removed ${action.payload.title} from cart!`, {position:"bottom-left"});
+           }
+           localStorage.setItem("Phones", JSON.stringify(state.cartItems));
+       },
+       getTotal(state) {
+           let totalAmount = 0;
+           state.cartItems.forEach(item => {
+               totalAmount += item.price * item.cartQuantity;
+           });
+           state.cartTotalAmount = totalAmount;
+       }
    },
 });
 
-export const { addToCart, removeFromCart} = cartSlice.actions;
+export const { addToCart, removeFromCart, decreaseCart, getTotal} = cartSlice.actions;
 export  default cartSlice.reducer;
 export type RootState = ReturnType<typeof store.getState>;

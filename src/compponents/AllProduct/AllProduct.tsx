@@ -35,10 +35,10 @@ let AllProduct:React.FC<IProps> = () => {
         <React.Fragment>
             <div className="flex flex-wrap justify-center">
                 {phones?.map(phone => (
-                    <div key={phone.id} className="bg-white shadow-lg rounded-lg overflow-hidden mt-2 m-2.5">
-                        <img src={phone.img} alt="phone_img" className="w-48 h-48 object-center object-cover" />
-                        <div className="w-48 h-46 px-6 py-4">
-                            <div className="font-bold text-xl mb-2">{phone.title}</div>
+                    <div key={phone.id} className="bg-white h-fit shadow-lg rounded-lg overflow-hidden mt-2 m-2.5">
+                        <img src={phone.img} alt="phone_img" className="w-48 h-fit object-center object-cover" />
+                        <div className="w-48 h-48 px-6 py-4">
+                            <div className="font-bold text-xl mb-3">{phone.title}</div>
                             <p className="text-gray-700 text-base">Ціна: ${phone.price}</p>
                             <button onClick={() => handleAddToCart(phone)} className="mt-3 bg-blue-500 hover:bg-blue-700 text-white py-0.5 px-2 rounded">Add To Cart</button>
                         </div>

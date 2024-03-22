@@ -8,7 +8,6 @@ import Cart from "./compponents/Cart/Cart";
 import AllProduct from "./compponents/AllProduct/AllProduct";
 import NavBar from "./compponents/NavBar/NavBar";
 
-
 function App() {
 
   return (
