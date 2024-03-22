@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1a6463ce-f88b-4f9a-85d6-f76fd0ff8147" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compponents/AllProduct/AllProduct.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compponents/AllProduct/AllProduct.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compponents/Cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compponents/Cart/Cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compponents/Cart/cartSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/compponents/Cart/cartSlice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compponents/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compponents/NavBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/selectors/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/selectors/selectors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +34,10 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/phoneShop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ts.external.directory.path": "C:\\phoneShop\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -52,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711093345669</updated>
-      <workItem from="1711093347615" duration="302000" />
+      <workItem from="1711093347615" duration="1304000" />
     </task>
     <servers />
   </component>
